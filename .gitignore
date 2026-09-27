@@ -1,0 +1,40 @@
+# =========================
+# Python
+# =========================
+
+server/venv/
+server/__pycache__/
+server/**/__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# =========================
+# Node
+# =========================
+
+client/node_modules/
+client/dist/
+
+# =========================
+# macOS
+# =========================
+
+.DS_Store
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+npm-debug.log*

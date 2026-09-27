@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.app h1 {
+  margin-bottom: 8px;
+}
+
+.app p {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.grid {
+  width: min(700px, 90vw);
+  aspect-ratio: 1;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+
+  gap: 2px;
+
+  background: #374151;
+  padding: 2px;
+}
+
+.cell {
+  background: #1f2937;
+  border-radius: 2px;
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.cell:hover {
+  background: #374151;
+  transform: scale(1.05);
+}
